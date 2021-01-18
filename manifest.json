@@ -1,0 +1,14 @@
+{
+  "name": "thu_info_gpa_calc",
+  "description": "show your gpa on thu info web",
+  "version": "0.1",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts" : [{
+    "matches" : [ "<all_urls>" ],
+    "include_globs": ["*bks_cjdcx*"],
+    "js" : ["index.js"]
+  }],
+  "manifest_version": 2
+}
